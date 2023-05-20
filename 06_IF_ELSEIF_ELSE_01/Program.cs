@@ -50,7 +50,6 @@ namespace _06_IF_ELSEIF_ELSE_01
             //}
             #endregion
 
-
             //B Sınıfı ehliyet almak isteyen bir kişinin 18 ile 45 yaş aralığında olması ve sağlık raporunu onaylı olması gereklidir.
 
             #region 1.Yol
