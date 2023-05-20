@@ -11,6 +11,11 @@ namespace _07_Switch_Case
         static void Main(string[] args)
         {
         Console.WriteLine("MERHABA");
+        Console.WriteLine("MERHABA");
+        Console.WriteLine("MERHABA");
+        Console.WriteLine("MERHABA");
+        Console.WriteLine("MERHABA");
+        Console.WriteLine("MERHABA");
         }
     }
 }
