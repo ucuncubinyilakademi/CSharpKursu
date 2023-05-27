@@ -12,28 +12,28 @@ namespace _06_IF_ELSEIF_ELSE_03
         {
             //kullanıcıdan iki ürün fiyatı isteyin, ürün fiyat toplamları 250 tl geçerse ucuz ürüne  %25 indirim uygulayınız
 
-            //Console.WriteLine("1.Ürün Fiyatı:");
-            //double fiyat1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("1.Ürün Fiyatı:");
+            double fiyat1 = Convert.ToDouble(Console.ReadLine());
 
-            //Console.WriteLine("2.Ürün Fiyatı:");
-            //double fiyat2 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2.Ürün Fiyatı:");
+            double fiyat2 = Convert.ToDouble(Console.ReadLine());
 
-            //double toplam = fiyat1 + fiyat2;
+            double toplam = fiyat1 + fiyat2;
 
-            //if (toplam > 250)
-            //{
-            //    if (fiyat1 > fiyat2)                
-            //        fiyat2 = fiyat2 * 0.75;
+            if (toplam > 250)
+            {
+                if (fiyat1 > fiyat2)
+                    fiyat2 = fiyat2 * 0.75;
 
-            //    else                
-            //        fiyat1 *= 0.75;                
+                else
+                    fiyat1 *= 0.75;
 
-            //    Console.WriteLine("Ödeme:"+(fiyat1+fiyat2));
-            //}
-            //else
-            //{
-            //    Console.WriteLine("Ödeme:"+toplam);
-            //}
+                Console.WriteLine("Ödeme:" + (fiyat1 + fiyat2));
+            }
+            else
+            {
+                Console.WriteLine("Ödeme:" + toplam);
+            }
 
             #region 2.Yol
             Console.WriteLine("1.Ürün Fiyatı:");

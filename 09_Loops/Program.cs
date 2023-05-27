@@ -37,7 +37,7 @@ namespace _09_Loops
             //int i = 1;
 
             //while (i < 11)
-            //{                
+            //{
             //    Console.WriteLine(i);
             //    i++;
             //}
@@ -58,7 +58,7 @@ namespace _09_Loops
             //------------------------------------
 
             //int s = 1;
-            //while (s<100)
+            //while (s < 100)
             //{
             //    if (s % 3 == 0)
             //    {
@@ -67,17 +67,13 @@ namespace _09_Loops
 
             //    s++;
             //}
-
-
-
-
             #endregion
 
             #region 3.Örnek
 
             //1-100 arasındaki sayılardan 3'ün katları olanların toplamını ekrana yazdırınız.
 
-            //int s = 1; 
+            //int s = 1;
             //int toplam = 0;
             //while (s < 100)
             //{
@@ -88,7 +84,7 @@ namespace _09_Loops
 
             //    s++;
             //}
-            //Console.WriteLine("Toplam:"+toplam);
+            //Console.WriteLine("Toplam:" + toplam);
             #endregion
 
             #region 4.Örnek
@@ -103,7 +99,7 @@ namespace _09_Loops
             //while (s <= adet)
             //{
             //    Console.WriteLine("Fiyat Gir");
-            //    int fiyat= Convert.ToInt32(Console.ReadLine());
+            //    int fiyat = Convert.ToInt32(Console.ReadLine());
 
             //    toplam += fiyat;
             //    s++;
@@ -146,21 +142,17 @@ namespace _09_Loops
             //    Console.WriteLine("Password:");
             //    string password = Console.ReadLine();
 
-            //    if (username == admin && sifre==password)
+            //    if (username == admin && sifre == password)
             //    {
             //        Console.WriteLine("Giriş Başarılı");
-            //        break; 
-            //    }
-            //    else if (hak == 1)
-            //    {
-            //        Console.WriteLine("Hakkınız Bitti");
-            //    }
+            //        break;
+            //    }               
             //    else
             //    {
             //        Console.WriteLine("Tekrar Deneyiniz");
             //    }
             //    hak--;
-            //    Console.WriteLine("Kalan Hakkınız:"+hak);
+            //    Console.WriteLine("Kalan Hakkınız:" + hak);
             //}
 
             /*
@@ -231,28 +223,47 @@ namespace _09_Loops
 
 
             // Kullanıcı 0 değerini girene kadar girilen bütün sayıları toplayan döngü yapısını kodlayınız.
-            int toplam = 0;
+            //int toplam = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine("bir sayı giriniz:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi == 0)
+            //    {
+            //        break;
+            //    }
+            //    toplam += sayi;
+            //}
+
+            //Console.WriteLine("Toplam:"+toplam);
+
+
+            #endregion
+
+
+            #region RANDOM
+
             while (true)
             {
-                Console.WriteLine("bir sayı giriniz:");
-                int sayi = Convert.ToInt32(Console.ReadLine());
+                Random r = new Random();
 
-                if (sayi == 0)
-                {
-                    break;
-                }
-                toplam += sayi;
+                int sayi = r.Next(1, 100);
+
+                Console.WriteLine(sayi);
             }
+            
 
-            Console.WriteLine("Toplam:"+toplam);
+            // Bilgisayar 1 100 arasında bir rastgele değer tutsun ve kullanıcının 5 hak da tahmin etmesini isteyin. tahminleri büyültün küçültün gibi yönlendirin.
 
 
             #endregion
 
+
             #endregion
 
 
-            //WHILE TRUE
+
 
 
             Console.ReadLine();

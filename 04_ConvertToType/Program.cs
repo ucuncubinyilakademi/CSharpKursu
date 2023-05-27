@@ -90,12 +90,19 @@ namespace _04_ConvertToType
 
             //SUBSTRING()
             //** Index: string değerlerin 0 dan başlayarak her karakterinin numaralandırılmasına denir.
-            string metin = "bu ders bir başka ders";
-            string metin2 = metin.Substring(2);
-            string metin3 = metin.Substring(5);
+            //string metin = "bu ders bir başka ders";
+            //string metin2 = metin.Substring(2);
+            //string metin3 = metin.Substring(5);
 
-            Console.WriteLine(metin2);
-            
+            //Console.WriteLine(metin2);
+
+
+
+            Console.WriteLine("yaş:");
+            int yas = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine(yas+10);
+
             Console.ReadLine();
         }
     }

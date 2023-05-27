@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FC56BF59-2BF8-4840-8C1A-3112C78BB386}</ProjectGuid>
+    <ProjectGuid>{4163AE08-2673-44B0-921B-0F38D769A0E4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_08_ODEV_1</RootNamespace>
-    <AssemblyName>08_ODEV_1</AssemblyName>
+    <RootNamespace>_08_ODEV_2</RootNamespace>
+    <AssemblyName>08_ODEV_2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bankamatik.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

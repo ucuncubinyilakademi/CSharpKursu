@@ -12,20 +12,20 @@ namespace _02_VeriTipleri_Degiskenler
         //enum: Belirli değerler kümesini temsil eden bir türdür.
         static void Main(string[] args)
         {
-          /* ************** DEĞİŞKENLER (Variables)**************
-             Yazılım içerisinde data tanımlamak, datayı işleme tabi tutarak sonucunu tutmak,data taşımak vb işlemler için tanımlama yapmamızı sağlar yapılardır.
+            /* ************** DEĞİŞKENLER (Variables)**************
+               Yazılım içerisinde data tanımlamak, datayı işleme tabi tutarak sonucunu tutmak,data taşımak vb işlemler için tanımlama yapmamızı sağlar yapılardır.
 
-            *** DEĞİŞKEN TANIMLAMA ***
-            
-            veritipi değişkenadı = değer;
+              *** DEĞİŞKEN TANIMLAMA ***
 
-            ** ÖNEMLİ
-                * Değişken isimleri kendi bulundukları { } içerisinde benzersiz olmalıdır.
-                * İsimlendirme Kuralları (case-Sensitive)
-                    * yanlışlar: 5sayi, ?sayi, sayi!, ad soyad, 
-                    * doğrular:  sayi5, _sayi, sayi_, adsoyad, ad_soyad
-                    * alt tire bütün yazılım dillerinde geçerli tek özel karakterdir.
-             */
+              veritipi değişkenadı = değer;
+
+              ** ÖNEMLİ
+                  * Değişken isimleri kendi bulundukları { } içerisinde benzersiz olmalıdır.
+                  * İsimlendirme Kuralları (case-Sensitive)
+                      * yanlışlar: 5sayi, ?sayi, sayi!, ad soyad, 
+                      * doğrular:  sayi5, _sayi, sayi_, adsoyad, ad_soyad
+                      * alt tire bütün yazılım dillerinde geçerli tek özel karakterdir.
+               */
             //İki farklı değer tutmak için
             //int yas1 = 11;
             //int yas2 = 34;
@@ -38,18 +38,18 @@ namespace _02_VeriTipleri_Degiskenler
             //int yas = 12;
             //int Yas = 13;
 
-
             /* 
               **************** VERİ TİPLERİ (Data Types) ****************
              * SAYISAL VERİ TİPLERİ (int,long,double)
             ** int: +/- 10 basamağa kadar tam sayıları tanımlar.
 
             // İki Kardeş yaşını toplayınız.
+            
+           
             int yas = 33;
-
             Console.WriteLine(yas);
             Console.WriteLine(yas+5);
-
+            
             int yas2 = 12;
 
             int toplam = yas + yas2;
@@ -79,15 +79,12 @@ namespace _02_VeriTipleri_Degiskenler
                 string ad = "Altan Emre";
                 string soyad = "Demirci";
 
-
             * MANTIKSAL VERİ TİPİ(Boolean)
             ** bool: Sadece true veya false değerleri alır.
+            */
 
-
-             */
-
-            //bool cevap = true;
-            //bool cevap2 = false;
+            bool cevap = true;
+            bool cevap2 = false;
 
             ////bool sonuc = 5 < 3;
             ////bool sonuc = 5 == 3;
@@ -120,7 +117,7 @@ namespace _02_VeriTipleri_Degiskenler
             //        int b;
             //    }
             //    a = 10;//Geçerli
-            //    b= 5;  //Hata
+            //    b = 5;  //Hata
             //}
 
             //int a;
@@ -132,15 +129,15 @@ namespace _02_VeriTipleri_Degiskenler
             //}
 
 
-            //{
-            //    {
-            //        long a = 2;
-            //    }
-            //    {
-            //        int a = 2;
-            //    }
+            {
+                {
+                    long a = 2;
+                }
+                {
+                    int a = 2;
+                }
 
-            //}
+            }
 
             //Sabit Değişken anlamına gelir. değer ilk tanımdan sonra değiştirilemez.
             //const int pi = 3;
@@ -149,24 +146,33 @@ namespace _02_VeriTipleri_Degiskenler
 
 
             // Değişken Tanımlama Şekilleri
-            int a;
-            a = 5;
+            //int a;
+            //a = 5;
 
 
-            int b, c;
-            b = 3;
-            c = 4;
+            //int b, c;
+            //b = 3;
+            //c = 4;
 
 
-            int d = 3, e = 5;
+            //int d = 3, e = 5;
 
 
             //int sayi,string ad; // HATA: Aynı satırda 2 farklı veritipine sahip değişken tanımlana 
 
 
+            int sayi1 = 10;
+            sayi1 = 5;
+
+           // int toplam = sayi1 + sayi2;
+
+            //Console.WriteLine(toplam);
+            sayi1 = 22;
+            Console.WriteLine(sayi1);
             Console.ReadKey();  
             //Console.ReadLine();
 
+           
            
 
             

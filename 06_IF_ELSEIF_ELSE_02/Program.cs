@@ -24,7 +24,7 @@ namespace _06_IF_ELSEIF_ELSE_02
             //    double netGelir = gelir * 0.88;//(gelir-(gelir*12)/100);
             //    Console.WriteLine("Net Gelir:" + netGelir);
             //    //-----------
-            //    Console.WriteLine("Net Gelir:" + (gelir*0.88));
+            //    Console.WriteLine("Net Gelir:" + (gelir * 0.88));
             //}
             //else
             //{
@@ -45,14 +45,14 @@ namespace _06_IF_ELSEIF_ELSE_02
 
             //if (gelir > 40000)
             //{
-            //   netGelir = gelir * 0.88;
+            //    netGelir = gelir * 0.88;
             //}
             //else
             //{
-            //   netGelir = gelir * 0.91;
+            //    netGelir = gelir * 0.91;
             //}
 
-            //Console.WriteLine("Net Gelir:"+netGelir);
+            //Console.WriteLine("Net Gelir:" + netGelir);
             #endregion
 
 
@@ -61,11 +61,7 @@ namespace _06_IF_ELSEIF_ELSE_02
 
             double netGelir = gelir > 40000 ? gelir * 0.88 : gelir * 0.91;
 
-            Console.WriteLine("Net Gelir:" +netGelir);
-
-         
-
-
+            Console.WriteLine("Net Gelir:" + netGelir);
 
             Console.ReadLine();
 

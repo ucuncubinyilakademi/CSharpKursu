@@ -25,14 +25,14 @@ namespace _03_Operatörler
             Console.WriteLine("Sonuç:"+sonuc2);
             Console.WriteLine("Sonuç:"+sonuc3);
             Console.WriteLine("Sonuç:"+sonuc4);
-             
-
+         
+           
             int sayi = 12;
-            double sayi2 = 3.0;
+            double sayi2 = 3.5;
             double sonuc = sayi / sayi2;
-            //Console.WriteLine(sayi/sayi2);
+            Console.WriteLine(sayi/sayi2);
 
-
+            /*
             Mod Alma (%):
             Herhangi bir değeri bir değere % mod alırsanız kalanı verir.
             
@@ -63,17 +63,20 @@ namespace _03_Operatörler
 
 
             //bool sonuc = username == "altanemre";
-            //bool sonuc2 = password == "1";
+            //bool sonuc2 = password == "12";
             //Console.WriteLine(sonuc);
             //Console.WriteLine(sonuc2);
             //Console.WriteLine(sonuc==sonuc2);
 
+            //bool girisDurumu = username == "altanemre" && password == "1";
+
+            //Console.WriteLine("Giriş:"+girisDurumu);
             // AND(VE) MANTIKSAL OPERATÖRÜ
             //Birden fazla karşılaştırma durumu olduğunda ve her durumun doğru olması isteniliyor ise AND && operatörü kullanılır.
 
             /*
              
-             Durum1      Durum2        Sonuç
+             Username      Şİfre        Sonuç
                F           F             F
                F           T             F
                T           F             F
@@ -97,15 +100,15 @@ namespace _03_Operatörler
                F           T             F            T
                T           F             F            T
                F           F             T            T
-             
+             */
              
             string username = "altanemre";
             string email = "sexi_velet_17@hotmail.com";
-            string phone = "5366295132";
+            string phone = "5366295131";
             string password = "1";
 
 
-            Console.WriteLine("User:");
+            Console.WriteLine("Email/Phone/Username:");
             string kullanici = Console.ReadLine();          
 
             Console.WriteLine("Password:");
@@ -115,7 +118,7 @@ namespace _03_Operatörler
             bool sonuc = (username == kullanici || phone == kullanici || email == kullanici) && password == sifre;
 
             Console.WriteLine("Giriş:"+sonuc);
-             */
+            
 
 
             // NOT(Değil) Operatörü
@@ -126,12 +129,12 @@ namespace _03_Operatörler
             //Console.WriteLine(!sonuc);
 
             // **** ATAMA OPERATÖRÜ(=) **** 
-            //int sayi = 6;
+            int sayi = 6;
 
-            //sayi += 2; //sayi = sayi + 2;
-            //sayi -= 2; //sayi = sayi - 2;
-            //sayi *= 2; //sayi = sayi * 2;
-            //sayi /= 2; //sayi = sayi / 2;
+            sayi += 2; //sayi = sayi + 2;
+            sayi -= 2; //sayi = sayi - 2;
+            sayi *= 2; //sayi = sayi * 2;
+            sayi /= 2; //sayi = sayi / 2;
 
 
             // **** KIYAS OPERATORLER( ?-true :-false) ****
@@ -158,7 +161,7 @@ namespace _03_Operatörler
             bool sonuc6 = sayi != sayi2;
             */
 
-           
+
 
             Console.ReadKey();
         }

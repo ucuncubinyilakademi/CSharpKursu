@@ -16,7 +16,7 @@ namespace _06_IF_ELSEIF_ELSE
              2-switch case
              3-try catch(hata ayıklama)
             
-             IF-ELSEIF-ELSE
+             IF - ELSEIF - ELSE
             * her durum kontrolü if deyimi ile başlar ve alternatif her durum için else if deyimi yazılır.if ve else if bloklarındaki durumlar(koşullar) sağlanmadığı diğer durumlar için else yazılır ve else diğer her durum için geçerli olduğunda KOŞUL YAZILMAZ.
 
              
@@ -44,6 +44,28 @@ namespace _06_IF_ELSEIF_ELSE
             Console.WriteLine("Yaşınız:");
             int yas = Convert.ToInt32(Console.ReadLine());
 
+            //if(yas>0 && yas < 18)
+            //{
+            //    Console.WriteLine("Çocuk");
+            //}
+            //else if(yas>17 && yas < 34)
+            //{
+            //    Console.WriteLine("Genç");
+            //}
+            //else if(yas>33 && yas < 51)
+            //{
+            //    Console.WriteLine("Orta Yaş");
+            //}
+            //else if(yas>50 && yas < 110)
+            //{
+            //    Console.WriteLine("Yaşlı");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Yaş yanlış");
+            //}
+
+            //Console.ReadLine();
 
             //if (yas>=0 && yas < 18) //karşılaştırma true ise if e ait parantez içindeki kodlar çalışır.
             //{

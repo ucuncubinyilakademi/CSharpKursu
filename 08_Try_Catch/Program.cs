@@ -11,35 +11,41 @@ namespace _08_Try_Catch
         static void Main(string[] args)
         {
             /*  TRY CATCH : HATA YAKALAMA */
+            //try
+            //{
+            //Console.WriteLine("Bir sayı giriniz:");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(sayi/0);
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("Hatalı Giriş");
+            //}
 
-            DON:
             try
             {
                 Console.WriteLine("yaşınız:");
                 int yas = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine(yas/0);
+                Console.WriteLine(yas / 0);
             }
             catch (FormatException)
             {
-                Console.WriteLine("Sayısal Değer Giriniz!!...");
-                goto DON;
+                Console.WriteLine("Sayısal Değer Giriniz!!...");                
             }
             catch (DivideByZeroException)
             {
-                Console.WriteLine("0 a bölemezsin!!");
-                goto DON;
+                Console.WriteLine("0 a bölemezsin!!");                
             }
             catch (OverflowException)
             {
-                Console.WriteLine("Sayı 10 basamaktan büyük olmaz!!");
-                goto DON;
+                Console.WriteLine("Sayı 10 basamaktan büyük olmaz!!");                
             }
             catch (Exception e)
             {
-                Console.WriteLine("Diğer hatalar"+e);
+                Console.WriteLine("Diğer hatalar" + e);
             }
-                       
+
 
             Console.ReadLine();
         }

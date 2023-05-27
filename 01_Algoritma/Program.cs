@@ -9,7 +9,7 @@ namespace _01_Algoritma
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {           
             //Tek satır açıklama yazmaya yarar.
 
             /*

@@ -14,7 +14,7 @@ namespace _06_IF_ELSEIF_ELSE_04
             //2'nin katları olan sayıların 
             //toplamını yapınız ve kullanıcıya gösteriniz
 
-            BASLA:
+            
             Console.WriteLine("1.Sayı:");
             int s1 = Convert.ToInt32(Console.ReadLine());
 
@@ -41,7 +41,7 @@ namespace _06_IF_ELSEIF_ELSE_04
 
             Console.WriteLine("Toplam="+toplam);
 
-            goto BASLA;
+            
 
             Console.ReadLine();
 
