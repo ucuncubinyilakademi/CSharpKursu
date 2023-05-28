@@ -244,20 +244,166 @@ namespace _09_Loops
 
             #region RANDOM
 
-            while (true)
-            {
-                Random r = new Random();
+            //while (true)
+            //{
+            //    Random r = new Random();
 
-                int sayi = r.Next(1, 100);
+            //    int sayi = r.Next(1, 100);
 
-                Console.WriteLine(sayi);
-            }
-            
+            //    Console.WriteLine(sayi);
+            //}
+
 
             // Bilgisayar 1 100 arasında bir rastgele değer tutsun ve kullanıcının 5 hak da tahmin etmesini isteyin. tahminleri büyültün küçültün gibi yönlendirin.
 
+            // Random r = new Random();
+            // int rastgele = r.Next(1, 100);
+            //// Console.WriteLine(rastgele);
+            // int hak = 1;
+            // while (hak<6) // 5,4,3,2,1
+            // {
+            //     Console.WriteLine("Tahmininiz:");
+            //     int tahmin = Convert.ToInt32(Console.ReadLine());
+
+            //     if (tahmin == rastgele)
+            //     {
+            //         Console.WriteLine("Tebrikler");
+            //         break;
+            //     }
+            //     else if (hak == 5)
+            //         Console.WriteLine("Hakkınız Bitti.");
+            //     else if (tahmin > rastgele)
+            //         Console.WriteLine("Tahmininizi Küçültünüz");
+            //     else
+            //         Console.WriteLine("Tahmininizi Büyültünüz.");
+            //     hak++;
+            // }
 
             #endregion
+
+            #endregion
+
+            #region FOR 
+
+            //int i = 0;
+
+            //while (i<5)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+            /*
+            for(sayaç,koşul,step)
+            {
+                //iŞLEM
+            
+            }
+            
+             
+             
+             */
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine(i);                
+            //}
+
+            #region 1.Örnek
+
+            // For loop ile 1 - 100 arasındaki çift sayıları yazdırınız
+
+            //for (int i = 1; i < 100; i++)
+            //{
+            //    if(i%2==0)
+            //        Console.WriteLine(i);
+            //}
+
+
+            #endregion
+
+            #region 2.Örnek
+
+            // For loop ile 1 - 100 arasında 3'ün katı sayıların adetini ve toplamını yazdırınız
+
+
+            //int toplam=0;
+            //int adet = 0;
+            //for (int i = 1; i < 100; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        toplam += i;
+            //        adet++;
+            //    }
+
+            //}
+            //Console.WriteLine("Toplam:"+toplam);
+            //Console.WriteLine("Adet:"+adet);
+
+
+            #endregion
+
+            #region 3.Örnek
+            // 5 => 1*2*3*4*5 =>
+
+            //kullanıcıdan alınacak bir sayının faktöriyelini bulan hesaplamayı  for ile yapınız
+            //int faktoriyel = 1;
+            //Console.WriteLine("Faktöriyel hesaplanacak sayı:");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 1; i <=sayi; i++)
+            //{
+            //    faktoriyel *= i;
+            //}
+
+            //Console.WriteLine("Sonuç:"+faktoriyel);
+
+            #endregion
+
+            #endregion
+
+            #region DO_WHILE
+
+            //do
+            //{
+            //    //işlem
+            //} while (//koşul);
+
+            #region 1.Örnek
+
+            //Kullanıcı 0 girene kadar girilen sayıların toplamını ekrana yazdırın
+
+            int toplam = 0;
+
+            //while (true)
+            //{
+            //    Console.WriteLine("Sayı:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi == 0)
+            //        break;
+
+            //    toplam += sayi;
+            //}
+
+            int sayi = 0;
+            do
+            {
+                Console.WriteLine("Sayı:");
+                sayi = Convert.ToInt32(Console.ReadLine());
+                toplam += sayi;
+
+            } while (sayi!=0);
+
+
+
+            Console.WriteLine("Toplam="+toplam);
+
+
+
+            #endregion
+
 
 
             #endregion
