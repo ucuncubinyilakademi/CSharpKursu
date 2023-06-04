@@ -156,9 +156,34 @@ namespace _10_Arrays_Odev_1
             #region Aşağıdaki dizideki tekrar eden dataların indexleri ekrana yazdırınız.
 
             string[] isimler = { "Ali", "Veli", "Ali", "Ahmet", "Mehmet", "Ali", "Zehra", "Fatma", "Ayşe", "Ali" };
+
+            #region Ali Güner
+            //for (int i = 0; i < isimler.Length; i++)
+            //{
+            //    int a = Array.IndexOf(isimler, isimler[i]);
+
+            //    if (a != i)
+            //    {
+            //        Console.WriteLine(isimler[a]);
+            //    }
+            //}
             #endregion
 
+            int uzunluk = isimler.Length;
 
+            int indx = -1;
+
+            while (true)
+            {
+                if (indx >= uzunluk-1)
+                    break;
+                indx = Array.IndexOf(isimler, "Ali",indx+1);
+                Console.WriteLine(indx);
+            }
+            
+            
+            #endregion
+           
             Console.ReadKey();
 
         }
