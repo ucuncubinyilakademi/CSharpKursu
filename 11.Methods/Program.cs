@@ -27,15 +27,15 @@ namespace _11_Methods
 
             ** Metot Tanımlama **
             
-            erişimbelirteci: public,private,protected,internal
+            erişimbelirteci: public: Bütün solution tarafında erişibilir.,
+                             private,protected,internal
             void : metotun değer döndürmeyeceğini belirtir.
             static: Bir yapının direk erişilebilir(kullanılabilir) olduğunu belirtir. static bir tanımın içinde yine static yapı kullanılması zorunludur.
 
             public void Toplama()
             {
                 //Metot İşlem komutları
-            }
-             
+            }             
 
             ** Metot Çağırma **
             metotName();
