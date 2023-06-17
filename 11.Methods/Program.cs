@@ -39,14 +39,49 @@ namespace _11_Methods
 
             ** Metot Çağırma **
             metotName();
-             */
+
 
             Toplama();
 
+
+            ***** DEĞER DÖNDÜREN METOTLAR (return) *****
+            Metodun yapmış olduğu işlemin sonucunu çağrıldığı yere geri getirir anlamına gelir.
+
+
+             */
+
+            //Console.WriteLine(Toplama());
+
+            int sonuc = Toplama();
+
+            if (sonuc > 10)
+            {
+                Console.WriteLine("Sayı3:");
+                int sayi3 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine(sonuc + sayi3);
+
+            }
+         
             Console.ReadKey();
         }
 
-        public static void Toplama()
+        //DEĞER DÖNDÜRMEYEN
+        //public static void Toplama()
+        //{
+        //    Console.WriteLine("Sayı1:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Sayı2:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    int toplam = sayi1 + sayi2;
+
+        //    Console.WriteLine("Toplam:" + toplam);
+        //}
+
+        //DEĞER DÖNDÜREN
+
+        public static int Toplama()
         {
             Console.WriteLine("Sayı1:");
             int sayi1 = Convert.ToInt32(Console.ReadLine());
@@ -55,8 +90,7 @@ namespace _11_Methods
 
             int toplam = sayi1 + sayi2;
 
-            Console.WriteLine("Toplam:" + toplam);
+            return toplam; // method nereden çağrılırsa aynı satıra toplam değişkenini taşır.
         }
-       
     }
 }
